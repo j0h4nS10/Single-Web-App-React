@@ -7,9 +7,6 @@ import Home from '../../pages/Home';
 import Menu from '../../pages/Menu';
 import Aboutus from '../../pages/Aboutus';
 
-
-
-
 const Navigationbar = () => {
 
   const Listlink = [{
