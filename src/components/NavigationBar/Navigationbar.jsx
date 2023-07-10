@@ -25,16 +25,19 @@ const Navigationbar = () => {
 
   return (
     <><div>
-      <Navbar>{/*style={({ isActive})=> ({ color: isActive ? 'red' : 'blue',})}*/}
-        <Container>
-          <Navbar.Brand href="/home">Las Ricuras Bogotas</Navbar.Brand>
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">{/*style={({ isActive})=> ({ color: isActive ? 'red' : 'blue',})}*/}
+      <Container>
+        <Navbar.Brand href="#home">Las Ricuras Bogotanas</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {Listlink.map((element) =>{
               return (<Nav.Link href={element.link}>{element.name}</Nav.Link>)
-            })} 
+            })}
           </Nav>
-        </Container>
-      </Navbar>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     </div>            
     </>
   );

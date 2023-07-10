@@ -1,15 +1,13 @@
 import Maincarousel from "./Maincarousel"
 
+const Jumbotron = () => {
 
-
-const Jumbotron = (props) => {
-
-    return (<><div class="container mt-2">
-        <div class="p-2 text-center bg-body-tertiary rounded-3">
-            <Maincarousel></Maincarousel>
-        </div>
-    </div></>
-
+    return (<>
+        <div class="container mt-2">
+            <div class="p-2 text-center bg-body-tertiary rounded-3">
+                <Maincarousel></Maincarousel>
+            </div>
+        </div></>
     )
 
 }

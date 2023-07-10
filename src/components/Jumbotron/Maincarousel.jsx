@@ -3,7 +3,7 @@ import { aliarray } from '../Reservation/Thirdcarousel';
 
 
 const Maincarousel = () => {
-  return (<><div className="container w-75">
+  return (<><div className="container w-100">
     <div className='d-flex justify-content-center'><Carousel>
       {aliarray.map((element) => {
         console.log(aliarray);

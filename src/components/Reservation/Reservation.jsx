@@ -40,10 +40,10 @@ const Reservation = () => {
         {Modalaction(handleShowAction, handleCloseAction, showAction, { title: "Reserva", body: "Su reserva fue agendada con exito" })}
         <div class="container my-5">
             <div class="container d-flex row">
-                <div class="col">
+                <div class="col-md-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39472663222!2d-74.27261667631505!3d4.648620627624712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQm9nb3Rh!5e0!3m2!1sen!2sco!4v1688876662779!5m2!1sen!2sco" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col">
+                <div class="col-md-6">
                     <div>
                         <h3>Make a reservation</h3>
                         <form>

@@ -22,13 +22,13 @@ const Menuali = () => {
 
     if (params) {
         const aliarrayfragment = aliarray.find(element => element.params == params)
-        console.log("dentro de find array");
+        
         return (<><div className="container my-5">
             <div className="row align-items-md-stretch">
                 <div className="col-md-6 mt-2 mb-2">
-                    <div className="h-100 p-5 text-bg-light rounded-3">
-                        <div style={{ width: '40rem' }}>
-                            <img src={aliarrayfragment.img} style={{ width: '35rem' }} />
+                    <div className="p-5 text-bg-light rounded-3">
+                        <div>
+                            <img src={aliarrayfragment.img} />
                         </div>
                     </div>
                 </div>
@@ -56,8 +56,9 @@ const Menuali = () => {
                         return (<>
                             <div className="col-md-6 mt-2 mb-2">
                                 <div className="h-100 p-5 text-bg-light rounded-3">
-                                    <div style={{ width: '40rem' }}>
-                                        <img src={element.img} style={{ width: '35rem' }} />
+                                    <div >
+                                        <img src={element.img} />
+
                                     </div>
                                 </div>
                             </div>

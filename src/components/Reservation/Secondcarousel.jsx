@@ -10,9 +10,10 @@ function Secondcarousel() {
             console.log(aliarray);
             return(
         <Carousel.Item>
-            <Card style={{ width: '40rem' }}>
+            <Card >
                 <div class="width-class-img">
-                    <Card.Img variant="top" src={element.img} />
+                    <img src={element.img}></img>
+                    {/*<Card.Img variant="top" src={element.img} />*/}
                 </div>
                 <Card.Body>
                     <Card.Title>{element.h1}</Card.Title>
