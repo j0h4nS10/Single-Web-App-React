@@ -10,9 +10,7 @@ const Footer = () => {
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
           <li className="nav-item"><Link to="/home" className="nav-link px-2 text-body-secondary">Home</Link></li>
           <li className="nav-item"><Link to="/menu" className="nav-link px-2 text-body-secondary">Menu</Link></li>
-          <li className="nav-item"><Link to="#/lunch" className="nav-link px-2 text-body-secondary">Pricing</Link></li>
-          <li className="nav-item"><Link href="#" className="nav-link px-2 text-body-secondary">FAQs</Link></li>
-          <li className="nav-item"><Link to="/aboutus" className="nav-link px-2 text-body-secondary">About</Link></li>
+          <li className="nav-item"><Link to="/aboutus" className="nav-link px-2 text-body-secondary">About Us</Link></li>
         </ul>
         <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
       </footer>

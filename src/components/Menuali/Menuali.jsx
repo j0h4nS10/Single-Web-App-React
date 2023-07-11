@@ -3,18 +3,19 @@ import { Button, Card } from "react-bootstrap"
 import { aliarray } from "../Reservation/Thirdcarousel"
 import { Link, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 
 const Menuali = () => {
 
-    const paramstyped  = useParams();
+    const paramstyped = useParams();
 
     const [params, setParams] = useState(null);
 
-    useEffect(() => { setParams(paramstyped.params)},[])
+    useEffect(() => { setParams(paramstyped.params) }, []);
 
-
+    const Navigate = useNavigate();
 
     //const { params } = useParams();
     //const params = "lunch"
@@ -22,7 +23,7 @@ const Menuali = () => {
 
     if (params) {
         const aliarrayfragment = aliarray.find(element => element.params == params)
-        
+
         return (<><div className="container my-5">
             <div className="row align-items-md-stretch">
                 <div className="col-md-6 mt-2 mb-2">
@@ -40,7 +41,7 @@ const Menuali = () => {
                             <p>{aliarrayfragment.p2}</p>
                         </div>
                         <div className="align-items-end">
-                            <Button><Link to={aliarray.paramslink}></Link>Go Back</Button>
+                            <Button onClick={() => { Navigate(-1) }}>Go Back</Button>
                         </div>
                     </div>
 
@@ -70,7 +71,7 @@ const Menuali = () => {
                                         <p>{element.p2}</p>
                                     </div>
                                     <div className="align-items-end">
-                                        <Button><Link to={aliarray.paramslink}></Link>Get more info</Button>
+                                        <Link to={element.paramslink}><Button>Get more info</Button></Link>
                                     </div>
                                 </div>
 

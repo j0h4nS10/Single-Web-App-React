@@ -1,12 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 
 export const aliarray = [
   {
     params : "breakfast",
-    paramslink: ":breakfast",
+    paramslink: "/menu/breakfast",
     h1: `BREAKFAST`,
     p1: `Strawberrys breackfast with scrumble eggs and sauces
     qieorajlkfdjas qiwoeralkfj`,
@@ -19,7 +20,7 @@ export const aliarray = [
     imgcapp : "Nutella with ..."
   },{
     params: "lunch",
-    paramslink: "#lunch/",
+    paramslink: "/menu/lunch",
     h1: `LUNCH`,
     p1: `Strawberrys breackfast with scrumble eggs and sauces
     qieorajlkfdjas qiwoeralkfj`,
@@ -33,7 +34,7 @@ export const aliarray = [
     imgcapp : "Nutella with ..."
   },{
     params: "desert",
-    paramslink: ":/desert/",
+    paramslink: "/menu/desert",
     h1: `DESERT`,
     p1: `Strawberrys breackfast with scrumble eggs and sauces
     qieorajlkfdjas qiwoeralkfj`,
@@ -62,7 +63,7 @@ const Thirdcarousel = () => {
               <p>{element.p2}</p>
             </div>
             <div>
-             <Button variant="primary">{element.paramslink}</Button> 
+             <Link to={element.paramslink}><Button variant="primary">{element.linkname}</Button></Link> 
             </div>
           </div>
         </Carousel.Item>)})}

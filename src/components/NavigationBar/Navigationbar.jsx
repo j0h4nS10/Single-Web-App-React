@@ -37,7 +37,7 @@ const Navigationbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {Listlink.map((element) =>{
-              return (<Nav.Link as={Link} href={element.link}>{element.name}</Nav.Link>)
+              return (<Nav.Link as={Link} to={element.link}>{element.name}</Nav.Link>)
             })}
           </Nav>
         </Navbar.Collapse>

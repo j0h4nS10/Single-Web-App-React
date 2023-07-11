@@ -13,17 +13,17 @@ const Listlink = [
 
     }, {
         id: 1,
-        link: "/home",
+        link: "home",
         name: "Home",
         element: <Home />
     }, {
         id: 2,
-        link: "/menu",
+        link: "menu",
         name: "Menu",
         element: <Menu />
     }, {
         id: 3,
-        link: "/aboutus",
+        link: "aboutus",
         name: "AboutUs",
         element: <Aboutus />
     }]
@@ -40,7 +40,9 @@ const Navigationrouter = () => {
                 {Listlink.map((el) => {
                     return (<Route key={el.id} path={el.link} element={el.element}></Route>)
                 })}
-                <Route path="/menu/:params" element={<Menu />}></Route>
+                <Route path="menu">
+                    <Route path="/menu/:params" element={<Menu />}></Route>
+                </Route>
                 <Route path="*" element={<Pagenotfound />} />
             </Routes>
     </>)
