@@ -7,15 +7,16 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // navigation
-import Navigationrouter from './utils/Navigationrouter.jsx';
+import Navigationrouter from './utils/Navigationrouter';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <Navigationrouter>
-     <App /> 
-    </Navigationrouter>
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>    
   </React.StrictMode>,
 )

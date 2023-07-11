@@ -8,7 +8,7 @@ const Maincarousel = () => {
       {aliarray.map((element) => {
         console.log(aliarray);
         return (
-          <Carousel.Item>
+          <Carousel.Item key={element.params}> 
             <img className="w-100"
               src={element.img}
               alt={element.imgalt}

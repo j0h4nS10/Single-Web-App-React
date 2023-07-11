@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom'
+
 
 
 const Footer = () => {
 
   return (<>
-    <div class="container-fluid bg-light">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    <div className="container-fluid bg-light">
+      <footer className="py-3 my-4">
+        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+          <li className="nav-item"><Link to="/home" className="nav-link px-2 text-body-secondary">Home</Link></li>
+          <li className="nav-item"><Link to="/menu" className="nav-link px-2 text-body-secondary">Menu</Link></li>
+          <li className="nav-item"><Link to="#/lunch" className="nav-link px-2 text-body-secondary">Pricing</Link></li>
+          <li className="nav-item"><Link href="#" className="nav-link px-2 text-body-secondary">FAQs</Link></li>
+          <li className="nav-item"><Link to="/aboutus" className="nav-link px-2 text-body-secondary">About</Link></li>
         </ul>
         <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
       </footer>

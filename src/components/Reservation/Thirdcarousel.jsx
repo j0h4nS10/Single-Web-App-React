@@ -5,8 +5,9 @@ import Button from 'react-bootstrap/Button';
 
 export const aliarray = [
   {
-    params : "breackfast",
-    h1: `BREACKFAST`,
+    params : "breakfast",
+    paramslink: ":breakfast",
+    h1: `BREAKFAST`,
     p1: `Strawberrys breackfast with scrumble eggs and sauces
     qieorajlkfdjas qiwoeralkfj`,
     p2: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
@@ -18,6 +19,7 @@ export const aliarray = [
     imgcapp : "Nutella with ..."
   },{
     params: "lunch",
+    paramslink: "#lunch/",
     h1: `LUNCH`,
     p1: `Strawberrys breackfast with scrumble eggs and sauces
     qieorajlkfdjas qiwoeralkfj`,
@@ -31,6 +33,7 @@ export const aliarray = [
     imgcapp : "Nutella with ..."
   },{
     params: "desert",
+    paramslink: ":/desert/",
     h1: `DESERT`,
     p1: `Strawberrys breackfast with scrumble eggs and sauces
     qieorajlkfdjas qiwoeralkfj`,
@@ -51,7 +54,7 @@ const Thirdcarousel = () => {
       <Carousel control="false" indicators="false">
         {aliarray.map((element)=>{
           console.log(aliarray);
-          return(<Carousel.Item>
+          return(<Carousel.Item key={element.params}>
           <div>
             <div>
               <h1>{element.h1}</h1>
@@ -59,7 +62,7 @@ const Thirdcarousel = () => {
               <p>{element.p2}</p>
             </div>
             <div>
-             <Button variant="primary">{element.linkname}</Button> 
+             <Button variant="primary">{element.paramslink}</Button> 
             </div>
           </div>
         </Carousel.Item>)})}

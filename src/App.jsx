@@ -2,15 +2,19 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './pages/Home'
+
+
+import Navigationrouter from './utils/Navigationrouter'
+
 
 
 
 function App() {
   
-
   return (<>
-    <Home></Home>
+
+  <Navigationrouter></Navigationrouter>
+  
     </>
   )
 }

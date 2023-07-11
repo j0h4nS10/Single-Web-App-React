@@ -25,7 +25,7 @@ const Modalreservation = (handleShow, handleClose, show, data, setData) => {
             </Modal.Header>
             <Modal.Body>{data.map((el) => {
                 if (avaedit == "true" && idedit == el.id) {
-                    return (<><div class="border p-2 mt-2 mb-2">
+                    return (<><div key={el.id} class="border p-2 mt-2 mb-2">
                         <div>
                             <ul>
                                 <li>Id reserva: {el.id}</li>
@@ -42,7 +42,7 @@ const Modalreservation = (handleShow, handleClose, show, data, setData) => {
                     </div>
                     </>)
                 } else {
-                    return (<><div class="border p-2 mt-2 mb-2">
+                    return (<><div key={el.id} class="border p-2 mt-2 mb-2">
                         <div>
                             <ul>
                                 <li>Id Reserva: {el.id}</li>

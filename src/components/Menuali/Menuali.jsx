@@ -40,7 +40,7 @@ const Menuali = () => {
                             <p>{aliarrayfragment.p2}</p>
                         </div>
                         <div className="align-items-end">
-                            <Button><Link to="/menu/:id"></Link>texto</Button>
+                            <Button><Link to={aliarray.paramslink}></Link>Go Back</Button>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@ const Menuali = () => {
                                         <p>{element.p2}</p>
                                     </div>
                                     <div className="align-items-end">
-                                        <Button><Link to="/menu/:id"></Link>texto</Button>
+                                        <Button><Link to={aliarray.paramslink}></Link>Get more info</Button>
                                     </div>
                                 </div>
 

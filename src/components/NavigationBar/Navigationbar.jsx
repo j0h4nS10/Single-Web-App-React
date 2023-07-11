@@ -10,14 +10,17 @@ import Aboutus from '../../pages/Aboutus';
 const Navigationbar = () => {
 
   const Listlink = [{
+    id: 1,
     link: "/home",
     name: "Home",
     element: <Home />
 },{
+    id: 2,
     link: "/menu",
     name: "Menu",
     element: <Menu />
 },{
+    id: 3,
     link: "/aboutus",
     name: "About Us",
     element: <Aboutus/>
@@ -25,6 +28,7 @@ const Navigationbar = () => {
 
   return (
     <><div>
+      {console.log(Listlink)}
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">{/*style={({ isActive})=> ({ color: isActive ? 'red' : 'blue',})}*/}
       <Container>
         <Navbar.Brand href="#home">Las Ricuras Bogotanas</Navbar.Brand>

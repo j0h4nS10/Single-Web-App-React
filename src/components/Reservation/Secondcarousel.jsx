@@ -9,9 +9,9 @@ function Secondcarousel() {
         {aliarray.map((element) => {
             console.log(aliarray);
             return(
-        <Carousel.Item>
+        <Carousel.Item key={element.params}>
             <Card >
-                <div class="width-class-img">
+                <div className="width-class-img">
                     <img src={element.img}></img>
                     {/*<Card.Img variant="top" src={element.img} />*/}
                 </div>

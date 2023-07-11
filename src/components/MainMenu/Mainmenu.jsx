@@ -8,7 +8,7 @@ const Mainmenu = () => {
     return (<><section>
         <div className="container my-5">
             <div className="row g-5 align-items-md-stretch">
-                <div className="col-md-6 mt-2 mb-2">
+                <div className="col-md-6 mt-5 mb-5">
                     <div className="h-100 p-5 text-bg-dark rounded-3">
                         <Secondcarousel></Secondcarousel>
                     </div>
