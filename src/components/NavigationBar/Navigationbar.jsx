@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Home from '../../pages/Home';
 import Menu from '../../pages/Menu';
 import Aboutus from '../../pages/Aboutus';
+import { Link } from 'react-router-dom';
 
 const Navigationbar = () => {
 
@@ -36,7 +37,7 @@ const Navigationbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {Listlink.map((element) =>{
-              return (<Nav.Link href={element.link}>{element.name}</Nav.Link>)
+              return (<Nav.Link as={Link} href={element.link}>{element.name}</Nav.Link>)
             })}
           </Nav>
         </Navbar.Collapse>
