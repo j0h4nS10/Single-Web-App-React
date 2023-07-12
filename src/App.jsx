@@ -2,9 +2,10 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import { Listlink } from './pages/Arrays'
 
 import Navigationrouter from './utils/Navigationrouter'
+
 
 
 
@@ -12,9 +13,7 @@ import Navigationrouter from './utils/Navigationrouter'
 function App() {
   
   return (<>
-
-  <Navigationrouter></Navigationrouter>
-  
+  <Navigationrouter props={Listlink}></Navigationrouter>
     </>
   )
 }

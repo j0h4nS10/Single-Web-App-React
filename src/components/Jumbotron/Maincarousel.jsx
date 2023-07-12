@@ -1,12 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { aliarray } from '../Reservation/Thirdcarousel';
 
 
-const Maincarousel = () => {
+
+const Maincarousel = ({props}) => {
   return (<><div className="container w-100">
     <div className='d-flex justify-content-center'><Carousel>
-      {aliarray.map((element) => {
-        console.log(aliarray);
+      {props.map((element) => {
+        console.log(`props dentro de maincarousel ${props}`);
+        console.log(props)
         return (
           <Carousel.Item key={element.params}> 
             <img className="w-100"

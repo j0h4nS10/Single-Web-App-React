@@ -5,39 +5,41 @@ import Menu from "../pages/Menu";
 import Aboutus from "../pages/Aboutus";
 import Pagenotfound from "../pages/404";
 
-const Listlink = [
-    {
-        id: 0,
-        link: "/",
-        element: <Home />
-
-    }, {
-        id: 1,
-        link: "home",
-        name: "Home",
-        element: <Home />
-    }, {
-        id: 2,
-        link: "menu",
-        name: "Menu",
-        element: <Menu />
-    }, {
-        id: 3,
-        link: "aboutus",
-        name: "AboutUs",
-        element: <Aboutus />
-    }]
 
 
-const Navigationrouter = () => {
 
-   
+const Navigationrouter = ({props}) => {
+
+    /*const Listlink = [
+        {
+            id: 0,
+            link: "/",
+            element: <Home />
+    
+        }, {
+            id: 1,
+            link: "home",
+            name: "Home",
+            element: <Home />
+        }, {
+            id: 2,
+            link: "menu",
+            name: "Menu",
+            element: <Menu />
+        }, {
+            id: 3,
+            link: "aboutus",
+            name: "AboutUs",
+            element: <Aboutus />
+        }]*/
+
+
 
     //'id' + (new Date()).getTime()
 
     return (<>
             <Routes>
-                {Listlink.map((el) => {
+                {props.map((el) => {
                     return (<Route key={el.id} path={el.link} element={el.element}></Route>)
                 })}
                 <Route path="menu">

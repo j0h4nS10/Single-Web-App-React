@@ -1,13 +1,13 @@
 import { Button, Card } from "react-bootstrap"
 
-import { aliarray } from "../Reservation/Thirdcarousel"
+
 import { Link, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 
 
-const Menuali = () => {
+const Menuali = ({props}) => {
 
     const paramstyped = useParams();
 
@@ -22,7 +22,7 @@ const Menuali = () => {
     console.log(params, paramstyped)
 
     if (params) {
-        const aliarrayfragment = aliarray.find(element => element.params == params)
+        const aliarrayfragment = props.find(element => element.params == params)
 
         return (<><div className="container my-5">
             <div className="row align-items-md-stretch">
@@ -53,7 +53,7 @@ const Menuali = () => {
         return (<><div>
             <div className="container my-5">
                 <div className="row align-items-md-stretch">
-                    {aliarray.map((element) => {
+                    {props.map((element) => {
                         return (<>
                             <div className="col-md-6 mt-2 mb-2">
                                 <div className="h-100 p-5 text-bg-light rounded-3">

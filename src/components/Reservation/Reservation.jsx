@@ -9,8 +9,7 @@ import Modalaction from "./Modalaction";
 
 // bootstrap
 import { Button } from "react-bootstrap";
-import Figure from "react-bootstrap/Figure";
-import Secondcarousel from "./Secondcarousel";
+
 
 
 const Reservation = () => {
@@ -74,9 +73,7 @@ const Reservation = () => {
                             setShowAction(true)
                         }}>Registrar reserva</Button>
                         <Button variant="secondary" onClick={handleShow}>Show Reservation</Button>
-
                         </div>
-                        
                     </div>
                 </div>
             </div>

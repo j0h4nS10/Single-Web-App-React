@@ -1,8 +1,8 @@
 import Navigationbar from "../components/NavigationBar/Navigationbar"
 
 
-import Footer from "../components/Footer/Footer"
-import Mainmenu from "../components/MainMenu/Mainmenu"
+import Footer from "../components/Footer/Footer";
+import { Listlink } from "./Arrays";
 
 
 const Aboutus = () => {
@@ -10,12 +10,10 @@ const Aboutus = () => {
     return (
         <><header>
 
-            <Navigationbar />
+            <Navigationbar props={Listlink} />
         </header>
             <main>
-                
-                {/*<Jumbotron h1="Basic Jumbotron"></Jumbotron>*/}
-                <Mainmenu></Mainmenu>
+                {<h1>about US</h1>}
                 
             </main>
             <footer>

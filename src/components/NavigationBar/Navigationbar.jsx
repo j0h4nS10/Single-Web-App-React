@@ -3,41 +3,23 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
-import Home from '../../pages/Home';
-import Menu from '../../pages/Menu';
-import Aboutus from '../../pages/Aboutus';
 import { Link } from 'react-router-dom';
 
-const Navigationbar = () => {
 
-  const Listlink = [{
-    id: 1,
-    link: "/home",
-    name: "Home",
-    element: <Home />
-},{
-    id: 2,
-    link: "/menu",
-    name: "Menu",
-    element: <Menu />
-},{
-    id: 3,
-    link: "/aboutus",
-    name: "About Us",
-    element: <Aboutus/>
-}]
+const Navigationbar = ({props}) => {
+ 
 
   return (
     <><div>
-      {console.log(Listlink)}
+      {console.log(`props en el navigationbar ${props}`)}
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">{/*style={({ isActive})=> ({ color: isActive ? 'red' : 'blue',})}*/}
       <Container>
-        <Navbar.Brand href="#home">Las Ricuras Bogotanas</Navbar.Brand>
+        <Navbar.Brand href="/home">Ricuras Rolas</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {Listlink.map((element) =>{
-              return (<Nav.Link as={Link} to={element.link}>{element.name}</Nav.Link>)
+            {props.map((element) =>{
+              return (<Nav.Link key={element.id} as={Link} to={element.link}>{element.name}</Nav.Link>)
             })}
           </Nav>
         </Navbar.Collapse>

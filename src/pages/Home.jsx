@@ -3,20 +3,20 @@ import Jumbotron from '../components/Jumbotron/Jumbotron'
 import Reservation from '../components/Reservation/Reservation'
 import Footer from '../components/Footer/Footer'
 import Mainmenu from '../components/MainMenu/Mainmenu'
-
-
+import aliarray from './Arrays'
+import { Listlink } from './Arrays'
 
 
 const Home = () => {
 
     return (<>
         <header>
-            <Navigationbar />
+            <Navigationbar props={Listlink}/>
         </header>
         <main>
-                <Jumbotron h1="Basic Jumbotron"></Jumbotron>
-                <Mainmenu></Mainmenu>
-                <Reservation></Reservation>
+            <Jumbotron props={aliarray}></Jumbotron>
+            <Mainmenu props={aliarray}></Mainmenu>
+            <Reservation></Reservation>
         </main>
         <footer>
             <Footer></Footer>
