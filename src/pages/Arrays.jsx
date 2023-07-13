@@ -4,6 +4,10 @@ import Aboutus from "./Aboutus"
 
 
 export const Listlink = [{
+  id: 0,
+  link: "/",
+  element: <Home />
+},{
   id: 1,
   link: "/home",
   name: "Home",
