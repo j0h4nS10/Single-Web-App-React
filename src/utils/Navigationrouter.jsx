@@ -10,31 +10,7 @@ import Pagenotfound from "../pages/404";
 
 const Navigationrouter = ({props}) => {
 
-    /*const Listlink = [
-        {
-            id: 0,
-            link: "/",
-            element: <Home />
     
-        }, {
-            id: 1,
-            link: "home",
-            name: "Home",
-            element: <Home />
-        }, {
-            id: 2,
-            link: "menu",
-            name: "Menu",
-            element: <Menu />
-        }, {
-            id: 3,
-            link: "aboutus",
-            name: "AboutUs",
-            element: <Aboutus />
-        }]*/
-
-
-
     //'id' + (new Date()).getTime()
 
     return (<>

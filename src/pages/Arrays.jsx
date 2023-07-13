@@ -9,7 +9,7 @@ export const Listlink = [{
   element: <Home />
 }, {
   id: 1,
-  link: "/",
+  link: "/home",
   name: "Home",
   element: <Home />
 }, {

@@ -7,7 +7,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // navigation
-import Navigationrouter from './utils/Navigationrouter';
+
 import { BrowserRouter } from 'react-router-dom';
 
 

@@ -7,9 +7,6 @@ import { Listlink } from './pages/Arrays'
 import Navigationrouter from './utils/Navigationrouter'
 
 
-
-
-
 function App() {
   
   return (<>
