@@ -2,12 +2,13 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import { getReservation, onchangeHandler, setInfotoupdate } from '../../utils/utils';
+import { onchangeHandler, setInfotoupdate } from '../../utils/utils';
 import { deleteReservation } from '../../utils/utils';
 import { updateReservation } from '../../utils/utils';
 
 import { userCollection } from '../../utils/utils';
 import { useEffect, useState } from 'react';
+
 
 const Modalreservation = (handleShow, handleClose, show, data, setData) => {
 
@@ -37,7 +38,7 @@ const Modalreservation = (handleShow, handleClose, show, data, setData) => {
                         </div>
                         <div>
                             <Button variant="warning" onClick={() => { setAvaedit('false') }}>Cancel</Button>
-                            <Button variant='success' onClick={() => { updateReservation(userCollection, idedit, nameedit, emailedit, dateedit, tableedit); setAvaedit('false'); getReservation(data, setData) }}>Save Changes</Button>
+                            <Button variant='success' onClick={() => { updateReservation(userCollection, idedit, nameedit, emailedit, dateedit, tableedit); setAvaedit('false')}}>Save Changes</Button>
                         </div>
                     </div>
                     </>)

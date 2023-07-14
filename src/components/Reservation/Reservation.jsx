@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 // import function 
-import { createReservation, getReservation } from '../../utils/utils'
+import { createReservation , getReservations } from '../../utils/utils'
 import { useNavigate } from "react-router-dom";
 import Modalreservation from "./Modalreservation";
 import Modalaction from "./Modalaction";
@@ -33,7 +33,7 @@ const Reservation = () => {
     const handleCloseAction = () => setShowAction(false);
     const handleShowAction = () => setShowAction(true);
 
-    useEffect(() => { getReservation(data, setData) }, [])
+    useEffect(() => { getReservations(data, setData) }, [])
 
     return (<>{Modalreservation(handleShow, handleClose, show, data, setData)}
         {Modalaction(handleShowAction, handleCloseAction, showAction, { title: "Reserva", body: "Su reserva fue agendada con exito" })}
